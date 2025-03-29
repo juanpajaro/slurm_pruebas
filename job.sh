@@ -7,7 +7,7 @@
 #SBATCH --ntasks-per-node=1                 # Una tarea por nodo
 #SBATCH --cpus-per-task=16                 # Número de núcleos por tarea
 #SBATCH --time=01:00:00                    # Tiempo máximo de ejecución
-#SBATCH --partition=general                # Partición a utilizar
+##SBATCH --partition=general                # Partición a utilizar
 
 # Cargar el entorno Conda
 source /zine/apps/anaconda_salud/etc/profile.d/conda.sh
