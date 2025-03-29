@@ -20,4 +20,4 @@ mkdir -p resultados
 module load mpi
 
 # Ejecutar la tarea con srun
-srun --mpi=pmix python mi_programa_mpi.py
+srun --mpi=pmix python /zine/data/salud/slurm_pruebas/mi_programa_mpi.py
