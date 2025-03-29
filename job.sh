@@ -9,6 +9,10 @@
 #SBATCH --time=01:00:00                    # Tiempo máximo de ejecución
 #SBATCH --partition=general                # Partición a utilizar
 
+# Cargar el entorno Conda
+source /zine/apps/anaconda_salud/etc/profile.d/conda.sh
+conda activate mpi_env
+
 # Crear carpeta de resultados si no existe
 mkdir -p resultados
 
@@ -16,4 +20,4 @@ mkdir -p resultados
 module load mpi
 
 # Ejecutar la tarea con srun
-srun --mpi=pmix python3 mi_programa_mpi.py
+srun --mpi=pmix python mi_programa_mpi.py
