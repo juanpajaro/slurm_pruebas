@@ -6,11 +6,10 @@
 #SBATCH --ntasks=1                         # Una sola tarea
 #SBATCH --cpus-per-task=16                 # Número de núcleos a usar (ajustar según el nodo)
 #SBATCH --time=01:00:00                    # Tiempo máximo de ejecución
-#SBATCH --partition=general                # Partición a utilizar
 
 # Cargar el entorno Conda
-source ~/miniconda3/etc/profile.d/conda.sh
-conda activate mpi_env
+source /zine/apps/anaconda_salud/etc/profile.d/conda.sh
+conda activate multiprocessing_env
 
 # Crear carpeta de resultados si no existe
 mkdir -p resultados
