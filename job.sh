@@ -15,4 +15,4 @@ conda activate multiprocessing_env
 mkdir -p resultados
 
 # Ejecutar la tarea con srun
-srun --mpi=pmix python /zine/data/salud/slurm_pruebas/mi_programa_multiprocessing.py
+srun python /zine/data/salud/slurm_pruebas/mi_programa_multiprocessing.py
